@@ -1,0 +1,544 @@
+[
+  {
+    "topic": "english-for-kids",
+    "background": "./assets/img/bg.webp",
+    "card": {
+      "0": {
+        "name": "Family",
+        "webp": "./assets/img/family/wr-family.webp",
+        "img": "./assets/img/family/wr-family.png"
+      },
+      "1": {
+        "name": "Home",
+        "webp": "./assets/img/home/wr-home.webp",
+        "img": "./assets/img/hime/wr-home.png"
+      },
+      "2": {
+        "name": "School",
+        "webp": "./assets/img/school/wr-school.webp",
+        "img": "./assets/img/school/wr-school.png"
+      },
+      "3": {
+        "name": "Weather",
+        "webp": "./assets/img/weather/wr-weather.webp",
+        "img": "./assets/img/weather/wr-weather.png"
+      },
+      "4": {
+        "name": "Emotions",
+        "webp": "./assets/img/emotions/wr-emotions.webp",
+        "img": "./assets/img/emotions/wr-emotions.png"
+      },
+      "5": {
+        "name": "Animals",
+        "webp": "./assets/img/animals/wr-animals.webp",
+        "img": "./assets/img/animals/wr-animals.png"
+      },
+      "6": {
+        "name": "Verbs 1",
+        "webp": "./assets/img/verbs1/wr-verbs.webp",
+        "img": "./assets/img/verbs1/wr-verbs.png"
+      },
+      "7": {
+        "name": "Verbs 2",
+        "webp": "./assets/img/verbs2/wr-verbs2.webp",
+        "img": "./assets/img/verbs2/wr-verbs2.png"
+      }
+    }
+  },
+  {
+    "topic": "animals",
+    "background": "./assets/img/animals/bg.webp",
+    "card": {
+      "0": {
+        "name": "Bear",
+        "translate": "Медведь",
+        "webp": "./assets/img/animals/animal-bear.webp",
+        "img": "./assets/img/animals/animal-bear.jpg",
+        "audio": "./assets/audio/bear.mp3"
+      },
+      "1": {
+        "name": "Cat",
+        "translate": "Кот",
+        "webp": "./assets/img/animals/animal-cat.webp",
+        "img": "./assets/img/animals/animal-cat.jpg",
+        "audio": "./assets/audio/cat.mp3"
+      },
+      "2": {
+        "name": "Dog",
+        "translate": "Собака",
+        "webp": "./assets/img/animals/animal-dog.webp",
+        "img": "./assets/img/animals/animal-dog.jpg",
+        "audio": "./assets/audio/dog.mp3"
+      },
+      "3": {
+        "name": "Donkey",
+        "translate": "Осёл",
+        "webp": "./assets/img/animals/animal-donkey.webp",
+        "img": "./assets/img/animals/animal-donkey.jpg",
+        "audio": "./assets/audio/donkey.mp3"
+      },
+      "4": {
+        "name": "Elephant",
+        "translate": "Слон",
+        "webp": "./assets/img/animals/animal-elephant.webp",
+        "img": "./assets/img/animals/animal-elephant.jpg",
+        "audio": "./assets/audio/elephant.mp3"
+      },
+      "5": {
+        "name": "Mouse",
+        "translate": "Мышь",
+        "webp": "./assets/img/animals/animal-mouse.webp",
+        "img": "./assets/img/animals/animal-mouse.jpg",
+        "audio": "./assets/audio/mouse.mp3"
+      },
+      "6": {
+        "name": "Pig",
+        "translate": "Поросенок",
+        "webp": "./assets/img/animals/animal-pig.webp",
+        "img": "./assets/img/animals/animal-pig.jpg",
+        "audio": "./assets/audio/pig.mp3"
+      },
+      "7": {
+        "name": "Tiger",
+        "translate": "Тигр",
+        "webp": "./assets/img/animals/animal-tiger.webp",
+        "img": "./assets/img/animals/animal-tiger.jpg",
+        "audio": "./assets/audio/tiger.mp3"
+      }
+    }
+  },
+  {
+    "topic": "emotions",
+    "background": "./assets/img/emotions/bg.webp",
+    "card": {
+      "0": {
+        "name": "Angry",
+        "translate": "Сердитый",
+        "webp": "./assets/img/emotions/emotions-angry.webp",
+        "img": "./assets/img/emotions/emotions-angry.png",
+        "audio": "./assets/audio/angry.mp3"
+      },
+      "1": {
+        "name": "Bashful",
+        "translate": "Застенчивый",
+        "webp": "./assets/img/emotions/emotions-bashful.webp",
+        "img": "./assets/img/emotions/emotions-bashful.png",
+        "audio": "./assets/audio/bashful.mp3"
+      },
+      "2": {
+        "name": "Excited",
+        "translate": "Восторженный",
+        "webp": "./assets/img/emotions/emotions-excited.webp",
+        "img": "./assets/img/emotions/emotions-excited.png",
+        "audio": "./assets/audio/excited.mp3"
+      },
+      "3": {
+        "name": "Friendly",
+        "translate": "Дружелюбный",
+        "webp": "./assets/img/emotions/emotions-friendly.webp",
+        "img": "./assets/img/emotions/emotions-friendly.png",
+        "audio": "./assets/audio/friendly.mp3"
+      },
+      "4": {
+        "name": "Happy",
+        "translate": "Счастливый",
+        "webp": "./assets/img/emotions/emotions-happy.webp",
+        "img": "./assets/img/emotions/emotions-happy.png",
+        "audio": "./assets/audio/happy.mp3"
+      },
+      "5": {
+        "name": "Pleased",
+        "translate": "Довольный",
+        "webp": "./assets/img/emotions/emotions-pleased.webp",
+        "img": "./assets/img/emotions/emotions-pleased.png",
+        "audio": "./assets/audio/pleased.mp3"
+      },
+      "6": {
+        "name": "Puzzled",
+        "translate": "Озадаченный",
+        "webp": "./assets/img/emotions/emotions-puzzled.webp",
+        "img": "./assets/img/emotions/emotions-puzzled.png",
+        "audio": "./assets/audio/puzzled.mp3"
+      },
+      "7": {
+        "name": "Sleepy",
+        "translate": "Сонный",
+        "webp": "./assets/img/emotions/emotions-sleepy.webp",
+        "img": "./assets/img/emotions/emotions-sleepy.png",
+        "audio": "./assets/audio/sleepy.mp3"
+      }
+    }
+  },
+  {
+    "topic": "family",
+    "background": "./assets/img/family/bg.webp",
+    "card": {
+      "0": {
+        "name": "Aunt",
+        "translate": "Тётя",
+        "webp": "./assets/img/family/family-aunt.webp",
+        "img": "./assets/img/family/family-aunt.jpg",
+        "audio": "./assets/audio/aunt.mp3"
+      },
+      "1": {
+        "name": "Baby",
+        "translate": "Ребёнок",
+        "webp": "./assets/img/family/family-baby.webp",
+        "img": "./assets/img/family/family-baby.jpg",
+        "audio": "./assets/audio/baby.mp3"
+      },
+      "2": {
+        "name": "Brother",
+        "translate": "Брат",
+        "webp": "./assets/img/family/family-brother.webp",
+        "img": "./assets/img/family/family-brother.jpg",
+        "audio": "./assets/audio/brother.mp3"
+      },
+      "3": {
+        "name": "Children",
+        "translate": "Дети",
+        "webp": "./assets/img/family/family-children.webp",
+        "img": "./assets/img/family/family-children.jpg",
+        "audio": "./assets/audio/children.mp3"
+      },
+      "4": {
+        "name": "Father",
+        "translate": "Отец",
+        "webp": "./assets/img/family/family-father.webp",
+        "img": "./assets/img/family/family-father.jpg",
+        "audio": "./assets/audio/father.mp3"
+      },
+      "5": {
+        "name": "Mother",
+        "translate": "Мать",
+        "webp": "./assets/img/family/family-mother.webp",
+        "img": "./assets/img/family/family-mother.jpg",
+        "audio": "./assets/audio/mother.mp3"
+      },
+      "6": {
+        "name": "Sister",
+        "translate": "Сестра",
+        "webp": "./assets/img/family/family-sister.webp",
+        "img": "./assets/img/family/family-sister.jpg",
+        "audio": "./assets/audio/sister.mp3"
+      },
+      "7": {
+        "name": "Uncle",
+        "translate": "Дядя",
+        "webp": "./assets/img/family/family-uncle.webp",
+        "img": "./assets/img/family/family-uncle.jpg",
+        "audio": "./assets/audio/uncle.mp3"
+      }
+    }
+  },
+  {
+    "topic": "home",
+    "background": "./assets/img/home/bg.webp",
+    "card": {
+      "0": {
+        "name": "Bath",
+        "translate": "Ванна",
+        "webp": "./assets/img/home/home-bath.webp",
+        "img": "./assets/img/home/home-bath.jpg",
+        "audio": "./assets/audio/bath.mp3"
+      },
+      "1": {
+        "name": "Bedroom",
+        "translate": "Спальня",
+        "webp": "./assets/img/home/home-bedroom.webp",
+        "img": "./assets/img/home/home-bedroom.jpg",
+        "audio": "./assets/audio/bedroom.mp3"
+      },
+      "2": {
+        "name": "Garden",
+        "translate": "Сад",
+        "webp": "./assets/img/home/home-garden.webp",
+        "img": "./assets/img/home/home-garden.jpg",
+        "audio": "./assets/audio/garden.mp3"
+      },
+      "3": {
+        "name": "House",
+        "translate": "Дом",
+        "webp": "./assets/img/home/home-house.webp",
+        "img": "./assets/img/home/home-house.jpg",
+        "audio": "./assets/audio/house.mp3"
+      },
+      "4": {
+        "name": "Kitchen",
+        "translate": "Кухня",
+        "webp": "./assets/img/home/home-kitchen.webp",
+        "img": "./assets/img/home/home-kitchen.jpg",
+        "audio": "./assets/audio/kitchen.mp3"
+      },
+      "5": {
+        "name": "Living room",
+        "translate": "Гостинная",
+        "webp": "./assets/img/home/home-livingroom.webp",
+        "img": "./assets/img/home/home-livingroom.jpg",
+        "audio": "./assets/audio/livingroom.mp3"
+      },
+      "6": {
+        "name": "Refrigerator",
+        "translate": "Холодильник",
+        "webp": "./assets/img/home/home-refrigerator.webp",
+        "img": "./assets/img/home/home-refrigerator.jpg",
+        "audio": "./assets/audio/refrigerator.mp3"
+      },
+      "7": {
+        "name": "Utility room",
+        "translate": "Хозяйственная комната",
+        "webp": "./assets/img/home/home-utilityroom.webp",
+        "img": "./assets/img/home/home-utilityroom.jpg",
+        "audio": "./assets/audio/utilityroom.mp3"
+      }
+    }
+  },
+  {
+    "topic": "school",
+    "background": "./assets/img/school/bg.webp",
+    "card": {
+      "0": {
+        "name": "Classmates",
+        "translate": "Одноклассники",
+        "webp": "./assets/img/school/school-classmates.webp",
+        "img": "./assets/img/school/school-classmates.jpg",
+        "audio": "./assets/audio/classmates.mp3"
+      },
+      "1": {
+        "name": "Schoolmaster",
+        "translate": "Директор",
+        "webp": "./assets/img/school/school-director.webp",
+        "img": "./assets/img/school/school-director.jpg",
+        "audio": "./assets/audio/director.mp3"
+      },
+      "2": {
+        "name": "Homework",
+        "translate": "Домашнее задание",
+        "webp": "./assets/img/school/school-homework.webp",
+        "img": "./assets/img/school/school-homework.jpg",
+        "audio": "./assets/audio/homework.mp3"
+      },
+      "3": {
+        "name": "Lesson",
+        "translate": "Урок",
+        "webp": "./assets/img/school/school-lesson.webp",
+        "img": "./assets/img/school/school-lesson.jpg",
+        "audio": "./assets/audio/lesson.mp3"
+      },
+      "4": {
+        "name": "Library",
+        "translate": "Библиотека",
+        "webp": "./assets/img/school/school-library.webp",
+        "img": "./assets/img/school/school-library.jpg",
+        "audio": "./assets/audio/library.mp3"
+      },
+      "5": {
+        "name": "Pupil",
+        "translate": "Ученик",
+        "webp": "./assets/img/school/school-pupil.webp",
+        "img": "./assets/img/school/school-pupil.jpg",
+        "audio": "./assets/audio/pupil.mp3"
+      },
+      "6": {
+        "name": "Teacher",
+        "translate": "Учитель",
+        "webp": "./assets/img/school/school-teacher.webp",
+        "img": "./assets/img/school/school-teacher.jpg",
+        "audio": "./assets/audio/teacher.mp3"
+      },
+      "7": {
+        "name": "Gym",
+        "translate": "Тренажерный зал",
+        "webp": "./assets/img/school/school-gym.webp",
+        "img": "./assets/img/school/school-gym.jpg",
+        "audio": "./assets/audio/gym.mp3"
+      }
+    }
+  },
+  {
+    "topic": "verbs1",
+    "background": "./assets/img/verbs1/bg.webp",
+    "card": {
+      "0": {
+        "name": "Clean up",
+        "translate": "Наводить порядок",
+        "webp": "./assets/img/verbs1/verbs-clean.webp",
+        "img": "./assets/img/verbs1/verbs-clean.jpg",
+        "audio": "./assets/audio/cleanup.mp3"
+      },
+      "1": {
+        "name": "Dance",
+        "translate": "Танцевать",
+        "webp": "./assets/img/verbs1/verbs-dance.webp",
+        "img": "./assets/img/verbs1/verbs-dance.jpg",
+        "audio": "./assets/audio/dance.mp3"
+      },
+      "2": {
+        "name": "Fly",
+        "translate": "Летать",
+        "webp": "./assets/img/verbs1/verbs-fly.webp",
+        "img": "./assets/img/verbs1/verbs-fly.jpg",
+        "audio": "./assets/audio/fly.mp3"
+      },
+      "3": {
+        "name": "Love",
+        "translate": "Любить",
+        "webp": "./assets/img/verbs1/verbs-love.webp",
+        "img": "./assets/img/verbs1/verbs-love.jpg",
+        "audio": "./assets/audio/love.mp3"
+      },
+      "4": {
+        "name": "Read",
+        "translate": "Читать",
+        "webp": "./assets/img/verbs1/verbs-read.webp",
+        "img": "./assets/img/verbs1/verbs-read.jpg",
+        "audio": "./assets/audio/read.mp3"
+      },
+      "5": {
+        "name": "Sleep",
+        "translate": "Спать",
+        "webp": "./assets/img/verbs1/verbs-sleep.webp",
+        "img": "./assets/img/verbs1/verbs-sleep.jpg",
+        "audio": "./assets/audio/sleep.mp3"
+      },
+      "6": {
+        "name": "Swim",
+        "translate": "Плавать",
+        "webp": "./assets/img/verbs1/verbs-swim.webp",
+        "img": "./assets/img/verbs1/verbs-swim.jpg",
+        "audio": "./assets/audio/swim.mp3"
+      },
+      "7": {
+        "name": "Talk",
+        "translate": "Разговаривать",
+        "webp": "./assets/img/verbs1/verbs-talk.webp",
+        "img": "./assets/img/verbs1/verbs-talk.jpg",
+        "audio": "./assets/audio/talk.mp3"
+      }
+    }
+  },
+  {
+    "topic": "verbs2",
+    "background": "./assets/img/verbs2/bg.webp",
+    "card": {
+      "0": {
+        "name": "Find",
+        "translate": "Найти",
+        "webp": "./assets/img/verbs2/verbs2-find.webp",
+        "img": "./assets/img/verbs2/verbs2-find.jpg",
+        "audio": "./assets/audio/find.mp3"
+      },
+      "1": {
+        "name": "Feed",
+        "translate": "Кормить",
+        "webp": "./assets/img/verbs2/verbs2-feed.webp",
+        "img": "./assets/img/verbs2/verbs2-feed.jpg",
+        "audio": "./assets/audio/feed.mp3"
+      },
+      "2": {
+        "name": "Hug",
+        "translate": "Обнять",
+        "webp": "./assets/img/verbs2/verbs2-hug.webp",
+        "img": "./assets/img/verbs2/verbs2-hug.jpg",
+        "audio": "./assets/audio/hug.mp3"
+      },
+      "3": {
+        "name": "Play",
+        "translate": "Играть",
+        "webp": "./assets/img/verbs2/verbs2-play.webp",
+        "img": "./assets/img/verbs2/verbs2-play.jpg",
+        "audio": "./assets/audio/play.mp3"
+      },
+      "4": {
+        "name": "Protect",
+        "translate": "Защищать",
+        "webp": "./assets/img/verbs2/verbs2-protect.webp",
+        "img": "./assets/img/verbs2/verbs2-protect.jpg",
+        "audio": "./assets/audio/protect.mp3"
+      },
+      "5": {
+        "name": "Smile",
+        "translate": "Улыбаться",
+        "webp": "./assets/img/verbs2/verbs2-smile.webp",
+        "img": "./assets/img/verbs2/verbs2-smile.jpg",
+        "audio": "./assets/audio/smile.mp3"
+      },
+      "6": {
+        "name": "Speak",
+        "translate": "Говорить",
+        "webp": "./assets/img/verbs2/verbs2-speak.webp",
+        "img": "./assets/img/verbs2/verbs2-speak.jpg",
+        "audio": "./assets/audio/speak.mp3"
+      },
+      "7": {
+        "name": "Take",
+        "translate": "Взять",
+        "webp": "./assets/img/verbs2/verbs2-take.webp",
+        "img": "./assets/img/verbs2/verbs2-take.jpg",
+        "audio": "./assets/audio/take.mp3"
+      }
+    }
+  },
+  {
+    "topic": "weather",
+    "background": "./assets/img/weather/bg.webp",
+    "card": {
+      "0": {
+        "name": "Autumn",
+        "translate": "Осень",
+        "webp": "./assets/img/weather/weather-autumn.webp",
+        "img": "./assets/img/weather/weather-autumn.jpg",
+        "audio": "./assets/audio/autumn.mp3"
+      },
+      "1": {
+        "name": "Fog",
+        "translate": "Туман",
+        "webp": "./assets/img/weather/weather-fog.webp",
+        "img": "./assets/img/weather/weather-fog.jpg",
+        "audio": "./assets/audio/fog.mp3"
+      },
+      "2": {
+        "name": "Snowstorm",
+        "translate": "Метель",
+        "webp": "./assets/img/weather/weather-snowstorm.webp",
+        "img": "./assets/img/weather/weather-snowstorm.jpg",
+        "audio": "./assets/audio/snowstorm.mp3"
+      },
+      "3": {
+        "name": "Spring",
+        "translate": "Весна",
+        "webp": "./assets/img/weather/weather-spring.webp",
+        "img": "./assets/img/weather/weather-spring.jpg",
+        "audio": "./assets/audio/spring.mp3"
+      },
+      "4": {
+        "name": "Summer",
+        "translate": "Лето",
+        "webp": "./assets/img/weather/weather-summer.webp",
+        "img": "./assets/img/weather/weather-summer.jpg",
+        "audio": "./assets/audio/summer.mp3"
+      },
+      "5": {
+        "name": "Sunshine",
+        "translate": "Солнечный свет",
+        "webp": "./assets/img/weather/weather-sunshine.webp",
+        "img": "./assets/img/weather/weather-sunshine.jpg",
+        "audio": "./assets/audio/sunshine.mp3"
+      },
+      "6": {
+        "name": "Thaw",
+        "translate": "Оттепель",
+        "webp": "./assets/img/weather/weather-thaw.webp",
+        "img": "./assets/img/weather/weather-thaw.jpg",
+        "audio": "./assets/audio/thaw.mp3"
+      },
+      "7": {
+        "name": "Winter",
+        "translate": "Зима",
+        "webp": "./assets/img/weather/weather-winter.webp",
+        "img": "./assets/img/weather/weather-winter.jpg",
+        "audio": "./assets/audio/winter.mp3"
+      }
+    }
+  }
+]

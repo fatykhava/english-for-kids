@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English FK</title>
+  <link rel="shortcut icon" href="./assets/img/icon.svg" type="image/svg">
+
+</head>
+
+<body>
+
+  <div class="start start__container" id="start-bg">
+    <h1 class="start__btn" id="start-btn">Let's start learning ENGLISH <br>
+      with DISNEY</h1>
+  </div>
+
+  <header class="header hide">
+    <div class="header__toggle">
+      <input type="checkbox" class="header__toggle-checkbox">
+      <span class="header__toggle-circle"></span>
+      <span class="header__toggle-text">TRAIN</span>
+    </div>
+    <div class="header__burger">
+      <span class="header__burger-line"></span>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <h3 class="nav__link active" data-topic="english-for-kids">Home Page</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="family">Family</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="home">Home</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="school">School</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="weather">Weather</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="emotions">Emotions</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="animals">Animals</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="verbs1">Verbs 1</h3>
+        </li>
+        <li class="nav__item">
+          <h3 class="nav__link" data-topic="verbs2">Verbs 2</h3>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main hide">
+    <h2 class="main__title"></h2>
+    <ul class="main__list list">
+
+    </ul>
+
+    <picture class="main__pic pic">
+      <source srcset="./assets/img/mikkey.webp">
+      <img src="./assets/img/mikkey.png" class="pic__img" alt="mikkey mouse pic">
+    </picture>
+
+    <button class="btn-play hidden">Start game</button>
+    <button class="btn-audio hidden"></button>
+    <ul class="rating-list"></ul>
+    <div class="final-popup"></div>
+    <div class="stat-popup">
+      <div class="stat-popup__container">
+        <div class="stat-popup__wr-btns">
+          <button class="stat-popup__btn-repeat">Repeat</button>
+          <button class="stat-popup__btn-reset">Reset</button>
+          <button class="stat-popup__btn-close">X</button>
+        </div>
+        <table class="stat-popup__table">
+        </table>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>

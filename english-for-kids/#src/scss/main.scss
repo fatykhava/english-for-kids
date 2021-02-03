@@ -1,0 +1,650 @@
+@import "~reset.css";
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$white-title: rgba(255, 255, 255, 0.8);
+$white-header: rgba(255, 255, 255, 0.5);
+$white-item: rgba(255, 255, 255, 0.1);
+$shadow: rgba(0, 0, 0, 0.3);
+$font: rgb(226, 103, 119);
+$bg-nav: rgba(226, 103, 119, 0.8);
+$dark-font: rgb(171, 71, 84);
+$correct: rgb(0, 0, 0);
+
+body {
+  overflow-x: hidden;
+  font-family: "Disney";
+
+  &.hide {
+    overflow-y: hidden;
+  }
+}
+
+.start {
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/img/disney-bg.webp");
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+
+    &.hidden {
+      opacity: 0;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+  &__btn {
+    padding: 0;
+    margin: 0;
+    font-size: 80px;
+    color: $white-title;
+    background: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+    animation: animationBtn 3s infinite;
+    outline: none;
+
+    &:hover {
+      font-size: 90px;
+      color: $white;
+    }
+  }
+}
+
+.header {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 50px;
+  box-sizing: border-box;
+
+  &.hide {
+    display: none;
+  }
+
+  &__toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90px;
+    height: 35px;
+    background-color: $font;
+    border: 2px solid $dark-font;
+    border-radius: 17px;
+    box-shadow: 0 0 5px $white;
+
+    &.play {
+      justify-content: flex-end;
+    }
+
+    &-circle {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 30px;
+      height: 30px;
+      background-color: $white;
+      border: 1px solid $dark-font;
+      border-radius: 15px;
+      box-shadow: 0 0 4px #fff;
+      transition: all 1s;
+    }
+
+    &-checkbox {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 25;
+      margin: 0;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked + .header__toggle-circle {
+        right: 57px;
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 50;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background-color: $dark-font;
+      border-radius: 2px;
+      transition: 0.5s;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &-line {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 5px;
+      border-radius: 2px;
+      background-color: $dark-font;
+      transition: 0.5s;
+    }
+
+    &.active::before {
+      top: 13px;
+      transform: rotate(45deg);
+      background-color: $white;
+    }
+
+    &.active::after {
+      bottom: 12px;
+      transform: rotate(-45deg);
+      background-color: $white;
+    }
+
+    &.active .header__burger-line {
+      opacity: 0;
+    }
+  }
+}
+
+.nav {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  right: -100vw;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $shadow;
+  box-sizing: border-box;
+  transition: 1s;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100vh;
+    padding: 100px 50px 30px;
+    box-sizing: border-box;
+    background-color: $bg-nav;
+    overflow-y: auto;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-size: 50px;
+    text-decoration: none;
+    color: $white;
+    text-shadow: 0 0 3px $white;
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: 0 0 5px $black;
+    }
+
+    &.active {
+      color: $dark-font;
+      text-shadow: 0 0 5px $black;
+      pointer-events: none;
+    }
+  }
+
+  &.active {
+    right: 0;
+  }
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-image: url("../assets/img/bg.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  color: $dark-font;
+
+  &__title {
+    padding-top: 80px;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px $white;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: calc(100% - 450px);
+    padding: 80px 50px 50px;
+    box-sizing: border-box;
+  }
+
+  &__pic {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 450px;
+    height: 70vh;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  &.untouch {
+    pointer-events: none;
+  }
+}
+
+.list {
+  &__item {
+    width: 350px;
+    height: 460px;
+    padding: 10px;
+    margin: 20px 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px $white;
+    background-color: $white-item;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 10px $dark-font;
+
+      & .list__wr-title {
+        background-color: $white;
+      }
+    }
+
+    &.rotate {
+      transform: rotateY(360deg);
+      transition: 0.5s;
+    }
+
+    &.play {
+      display: flex;
+      align-items: center;
+    }
+
+    &.play .list__wr-title {
+      display: none;
+    }
+
+    &.play .list__wr-pic {
+      height: 100%;
+    }
+
+    &.correct {
+      box-shadow: 0 0 10px $correct;
+      filter: saturate(0);
+    }
+  }
+
+  &__wr-pic {
+    width: 100%;
+    height: 50%;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+
+    & img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  &__wr-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $white-title;
+    transition: 0.5s;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-align: center;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+.btn-translate {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    fill: $dark-font;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.btn-play,
+.btn-audio {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  font-size: 50px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px $dark-font;
+  background-color: $white-title;
+  font-family: "Disney";
+  color: $dark-font;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 10px $white;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  & svg {
+    width: 60px;
+    height: 60px;
+    fill: $dark-font;
+  }
+}
+
+.rating-list {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  box-shadow: 0 0 10px $dark-font;
+  background-color: $white-title;
+  overflow-x: auto;
+
+  & li {
+    margin: 0 5px;
+  }
+
+  & svg {
+    width: 30px;
+    height: 30px;
+    fill: $dark-font;
+  }
+}
+
+.final-popup {
+  position: fixed;
+  top: -100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  box-shadow: 0 0 10px $dark-font;
+  background-color: $white-title;
+  color: $dark-font;
+  transition: 0.5s;
+
+  &.show {
+    top: 20%;
+  }
+
+  &__title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  &__wr-pic {
+    max-width: 200px;
+    max-height: 300px;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.stat-popup {
+  position: fixed;
+  top: -100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $shadow;
+  box-sizing: border-box;
+  z-index: 100;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 0 0 10px $dark-font;
+    background-color: $white-title;
+    color: $dark-font;
+    transition: 0.5s;
+    overflow: auto;
+  }
+
+  &__wr-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 20px;
+
+    & button {
+      font-family: "Disney";
+      padding: 10px;
+      font-size: 30px;
+      color: $dark-font;
+      background-color: $white-title;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 5px $dark-font;
+      outline: none;
+
+      &:hover {
+        box-shadow: 0 0 5px $white;
+      }
+    }
+  }
+
+  &__table {
+    width: 95%;
+    font-size: 20px;
+    border-collapse: collapse;
+    table-layout: auto;
+
+    & th {
+      padding: 5px 0;
+      font-size: 27px;
+      background-color: $white;
+      text-align: start;
+      border: 1px solid $font;
+      cursor: pointer;
+    }
+
+    & tr:nth-child(odd) {
+      background-color: $white-title;
+    }
+
+    & td {
+      border: 1px solid $font;
+    }
+  }
+
+  &.show {
+    top: 0;
+  }
+}
+
+.pic__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1350px) {
+  .start__btn {
+    font-size: 65px;
+  }
+
+  .main {
+    &__list {
+      width: calc(100% - 200px);
+    }
+
+    &__pic {
+      width: 200px;
+      height: 40vh;
+    }
+
+    &__title {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .main {
+    &__list {
+      width: 100%;
+    }
+
+    &__pic {
+      display: none !important;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .start__btn {
+    font-size: 50px;
+  }
+
+  .header {
+    padding: 20px 15px;
+  }
+
+  .nav__list {
+    width: 320px;
+    padding-top: 60px;
+  }
+
+  .main__title {
+    font-size: 30px;
+  }
+
+  .list {
+    padding: 20px 10px 50px;
+
+    &__item {
+      width: 300px;
+      height: 410px;
+    }
+  }
+
+  .final-popup__title {
+    font-size: 30px;
+  }
+
+  .stat-popup {
+    &__table {
+      font-size: 12px;
+  
+      & th {
+        padding: 5px 0;
+        font-size: 12px;
+      }
+    }
+
+    &__wr-btns button {
+        font-size: 18px;
+    }
+  }
+}
